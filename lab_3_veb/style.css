@@ -1,0 +1,124 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #eef3f7;
+    color: #1f2d3a;
+}
+
+/* Шапка: фиксированной высоты, не прокручивается */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1b3a52;
+    color: white;
+    text-align: center;
+}
+h1 {
+    font-size: 26px;
+    margin: 0 0 10px;
+}
+nav a {
+    color: #bfe3f5;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #2e5a7a;
+    color: white;
+}
+nav a.selected_menu {
+    background-color: #4fc3f7;
+    color: #1b3a52;
+}
+
+/* Содержимое растягивается и прижимает подвал вниз */
+main {
+    flex: 1;
+    width: 80%;
+    margin: 110px auto 20px;
+}
+section {
+    background-color: white;
+    padding: 10px 30px 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+h2 {
+    color: #1b6a96;
+}
+
+/* Подвал: фиксированной высоты, внизу страницы */
+footer {
+    height: 60px;
+    line-height: 60px;
+    background-color: #1b3a52;
+    color: white;
+    text-align: center;
+}
+
+.photos {
+    display: flex;
+    gap: 20px;
+}
+.photos img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #d3e6f2;
+}
+
+/* Форма */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+.inline {
+    display: inline;
+    font-weight: normal;
+    margin-right: 15px;
+}
+button {
+    background-color: #1b6a96;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 30px;
+    margin-top: 20px;
+    font-family: inherit;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1b3a52;
+}
